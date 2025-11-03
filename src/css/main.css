@@ -3,6 +3,7 @@
 @import url("../components/navbar/navbar.css");
 @import url("./info-section.css");
 @import url("./challenges-section.css");
+@import url("../challenges/Woche01/web-dev-karte-html.css");
 
 html,
 body {

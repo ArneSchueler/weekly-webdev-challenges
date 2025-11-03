@@ -1,0 +1,29 @@
+@import url("../css/variables.css");
+
+.section__challenge-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.challenge-detail__body-description {
+  max-width: 80%;
+}
+
+.challenge-detail__container {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+  gap: 24px;
+  line-height: 1.6;
+}
+.challenge-detail__content {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.challenge-detail__image {
+  border-radius: 15px;
+  height: 650px;
+}
