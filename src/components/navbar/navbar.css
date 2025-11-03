@@ -1,0 +1,24 @@
+@import url("../../css/variables.css");
+
+nav {
+  background-color: var(--bg-color);
+  color: var(--text-color-inverted);
+  display: flex;
+  align-items: center;
+  gap: 30%;
+  padding: 20px 80px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(87, 87, 87, 0.2);
+}
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color-inverted);
+}

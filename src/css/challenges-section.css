@@ -1,0 +1,87 @@
+@import url("../../css/variables.css");
+
+.section__challenges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 80px 0;
+}
+.container__challenges {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.challenge-card {
+  background-color: var(--bg-white);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  border-radius: 15px;
+  color: var(--text-color);
+  gap: 45px;
+}
+
+.challenge-card__info {
+  display: inline-flex;
+  gap: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.challenge-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.challenge-card__week {
+  font-weight: 700;
+  margin: 0;
+}
+
+.challenge-card__date {
+  font-weight: 700;
+  margin: 0;
+}
+
+.challenge-card__title {
+  margin: 0;
+}
+
+.challenge-card__body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.challenge-card__description {
+  margin: 0;
+}
+
+.challenge-card__tasks {
+  margin: 0;
+}
+
+.challenge-card__tasks {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.challenge-card__task-group {
+  display: inline-flex;
+}
+
+.challenge-card__button {
+  background-color: var(--bg-color);
+  color: var(--text-color-inverted);
+}
+
+.challenges__archive-button {
+  background-color: var(--bg-white);
+  color: var(--text-color);
+}

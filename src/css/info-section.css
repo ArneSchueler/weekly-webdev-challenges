@@ -1,0 +1,30 @@
+@import url("../../css/variables.css");
+
+.section__info {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--bg-section-color);
+}
+
+.container__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 80px;
+  color: var(--text-color-inverted);
+  gap: 32px;
+}
+
+.info-image {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+  height: 80%;
+}
+.container__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 600px;
+}

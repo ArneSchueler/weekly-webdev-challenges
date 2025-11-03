@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="./src/css/main.css"
+    />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">DevChallenges</div>
+        <ul class="navbar__links">
+          <li class="navbar__item"><a href="#hero-section">Home</a></li>
+          <li class="navbar__item">
+            <a href="#challenge-section">Challenges</a>
+          </li>
+          <li class="navbar__item">Archiv</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section__hero" id="hero-section">
+        <div class="content__hero">
+          <div class="content__hero-text">
+            <h1 class="content__hero-title">Übung macht den Dev!</h1>
+            <p class="content__hero-subtitle">
+              Jede Woche eine neue Coding Challenge,<br />
+              inspiriert von unserem Kurs. <br />
+              Lerne, probiere aus – und hab Spaß beim Coden!
+            </p>
+          </div>
+          <button class="content__hero-button" href="#">Los geht's!</button>
+        </div>
+      </section>
+      <section class="section__info">
+        <div class="container__info">
+          <img
+            src="https://images.unsplash.com/photo-1565229284535-2cbbe3049123?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=765"
+            alt="Image of coding magazins and a coffee mug"
+            class="info-image"
+          />
+          <div class="container__text">
+            <h2 class="info-title">Weekly Coding Challenge</h2>
+            <p class="info-body">
+              Willkommen zur wöchentlichen Coding Challenge unserer Fortbildung.
+              Montags wird hier und in Slack die neue Challenge gepostet.
+              Freitags nach der Vorlesung besprechen oder zeigen wir gemeinsam
+              die Ergebnisse. Die Teilnahme ist natürlich freiwillig.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section__challenges" id="challenge-section">
+        <div class="container__challenges">
+          <h2 class="challenges-title">Aktuelle Challenge</h2>
+          <div class="challenge-card">
+            <div class="challenge-card__header">
+              <h3 class="challenge-card__title">Web-Dev-Karte (HTML)</h3>
+              <div class="challenge-card__info">
+                <p class="challenge-card__week">Woche 1</p>
+                <p class="challenge-card__date">03.–07. Nov 2025</p>
+              </div>
+            </div>
+            <div class="challenge-card__body">
+              <p class="challenge-card__description">
+                Erstelle eine Spielkarte für Web-Developer <br />
+                im Pokemon-Stil nur mit HTML.
+              </p>
+              <ul class="challenge-card__tasks">
+                <div class="challenge-card__task-group">
+                  <img
+                    src="./src/assets/icons/check_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
+                    alt="check icon"
+                  />
+                  <li class="challenge-card__task">
+                    Überschrift, Bild, Beschreibung, etc.
+                  </li>
+                </div>
+                <div class="challenge-card__task-group">
+                  <img
+                    src="./src/assets/icons/check_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
+                    alt="check icon"
+                  />
+                  <li class="challenge-card__task">
+                    Saubere Semantik & sinnvolle Struktur
+                  </li>
+                </div>
+                <div class="challenge-card__task-group">
+                  <img
+                    src="./src/assets/icons/close_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
+                    alt="close icon"
+                  />
+                  <li class="challenge-card__task">
+                    Kein CSS – Fokus auf reines HTML
+                  </li>
+                </div>
+              </ul>
+            </div>
+            <button class="challenge-card__button" href="#">
+              Zur Challenge
+            </button>
+          </div>
+          <button class="challenges__archive-button" href="#">
+            Zum Archiv
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

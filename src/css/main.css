@@ -1,0 +1,45 @@
+@import url("./variables.css");
+@import url("./hero-section.css");
+@import url("../components/navbar/navbar.css");
+@import url("./info-section.css");
+@import url("./challenges-section.css");
+
+html,
+body {
+  background-color: var(--primary-color);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  color: var(--text-color-inverted);
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color-inverted);
+  border: none;
+  padding: 12px 24px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 14px;
+}
