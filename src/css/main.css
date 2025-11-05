@@ -35,7 +35,6 @@ p {
 }
 
 button {
-  background-color: var(--primary-color);
   color: var(--text-color-inverted);
   border: none;
   padding: 12px 24px;

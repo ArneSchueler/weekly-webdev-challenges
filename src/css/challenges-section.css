@@ -77,8 +77,12 @@
 }
 
 .challenge-card__button {
-  background-color: var(--bg-color);
-  color: var(--text-color-inverted);
+  border: 2px solid var(--bg-section-color);
+  color: var(--text-color);
+}
+.challenge-card__button:hover {
+  background-color: rgb(149, 167, 175);
+  transition: 0.7s;
 }
 
 .challenges__archive-button {
