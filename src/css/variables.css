@@ -5,4 +5,8 @@
   --bg-section-color: #232222;
   --primary-color: #1e1e1e;
   --bg-white: white;
+  --color-accent: 55, 108, 192, 0.4;
+
+  /* Box shadow */
+  --shadow: 0px 4px 24px rgb(var(--color-accent));
 }
