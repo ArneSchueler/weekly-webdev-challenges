@@ -4,7 +4,7 @@
 @import url("./info-section.css");
 @import url("./challenges-section.css");
 @import url("../challenges/Woche01/web-dev-karte-html.css");
-@import url(./archive.css);
+@import url("./archive.css");
 
 html,
 body {
