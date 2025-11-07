@@ -3,6 +3,8 @@
 .section__challenge-detail {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .challenge-detail__body-description {
@@ -30,4 +32,9 @@
 
 .challenge-detail__text {
   max-width: 600px;
+}
+
+.section__solution {
+  background-color: var(--bg-section-color);
+  padding: 24px;
 }
