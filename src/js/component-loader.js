@@ -14,4 +14,4 @@ async function loadComponent(selector, filePath) {
 }
 
 // Navbar laden
-loadComponent("#navbar", "/src/components/navbar/navbar.html");
+loadComponent("#navbar", "../../src/components/navbar/navbar.html");
