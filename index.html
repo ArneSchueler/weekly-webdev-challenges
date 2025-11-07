@@ -11,24 +11,13 @@
       media="screen"
       href="./src/css/main.css"
     />
-    <script src="main.js"></script>
+    <script src="./src/js/component-loader.js" defer></script>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <div class="navbar__logo">
-          <a href="http://127.0.0.1:5500/index.html#hero-section"
-            >DevChallenges</a
-          >
-        </div>
-        <ul class="navbar__links">
-          <li class="navbar__item"><a href="#hero-section">Home</a></li>
-          <li class="navbar__item">
-            <a href="#challenge-section">Challenges</a>
-          </li>
-          <li class="navbar__item">Archiv</li>
-        </ul>
-      </nav>
+      <section class="header">
+        <div id="navbar"></div>
+      </section>
     </header>
     <main>
       <section class="section__hero" id="hero-section">
@@ -120,7 +109,11 @@
               Zur Challenge
             </button>
           </div>
-          <button class="challenges__archive-button" href="#">
+          <button
+            class="challenges__archive-button"
+            href="#"
+            onclick="window.location.href='src/challenge-archive.html'"
+          >
             Zum Archiv
           </button>
         </div>

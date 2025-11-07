@@ -9,4 +9,7 @@
 
   /* Box shadow */
   --shadow: 0px 4px 24px rgb(var(--color-accent));
+
+  /* size */
+  --nav-h: 91px;
 }

@@ -5,225 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Challenge Archive</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/component-loader.js" defer></script>
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <div class="navbar__logo">
-          <a href="http://127.0.0.1:5500/index.html#hero-section"
-            >DevChallenges</a
-          >
-        </div>
-        <ul class="navbar__links">
-          <li class="navbar__item"><a href="#hero-section">Home</a></li>
-          <li class="navbar__item">
-            <a href="#challenge-section">Challenges</a>
-          </li>
-          <li class="navbar__item">Archiv</li>
-        </ul>
-      </nav>
+      <section class="header">
+        <div id="navbar"></div>
+      </section>
     </header>
     <main>
+      <!-- Challenge card week 1 -->
       <div class="container__archive">
-        <div class="challenge-card">
-          <div class="challenge-card__header">
-            <h3 class="challenge-card__title">Web-Dev-Karte (HTML)</h3>
-            <div class="challenge-card__info">
-              <p class="challenge-card__week">Woche 1</p>
-              <p class="challenge-card__date">03.–07. Nov 2025</p>
-            </div>
-          </div>
-          <div class="challenge-card__body">
-            <p class="challenge-card__description">
-              Erstelle eine Spielkarte für Web-Developer <br />
-              im Pokemon-Stil nur mit HTML.
-            </p>
-            <ul class="challenge-card__tasks">
-              <div class="challenge-card__task-group">
-                <img
-                  src="./src/assets/icons/check_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
-                  alt="check icon"
-                />
-                <li class="challenge-card__task">
-                  Überschrift, Bild, Beschreibung, etc.
-                </li>
-              </div>
-              <div class="challenge-card__task-group">
-                <img
-                  src="./src/assets/icons/check_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
-                  alt="check icon"
-                />
-                <li class="challenge-card__task">
-                  Saubere Semantik & sinnvolle Struktur
-                </li>
-              </div>
-              <div class="challenge-card__task-group">
-                <img
-                  src="./src/assets/icons/close_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
-                  alt="close icon"
-                />
-                <li class="challenge-card__task">
-                  Kein CSS – Fokus auf reines HTML
-                </li>
-              </div>
-            </ul>
-          </div>
-          <button
-            class="challenge-card__button"
-            onclick="window.location.href='src/challenges/Woche01/web-dev-karte-html.html'"
-          >
-            Zur Challenge
-          </button>
+        <div class="container__header">
+          <h1>Challenge Archive</h1>
+          <p>
+            Alle abgeschlossenen Challenges auf einen Blick – ideal, um
+            vergangene Aufgaben noch einmal anzuschauen oder nachzuholen.
+          </p>
         </div>
-        <div class="challenge-card">
-          <div class="challenge-card__header">
-            <h3 class="challenge-card__title">Web-Dev-Karte (HTML)</h3>
-            <div class="challenge-card__info">
-              <p class="challenge-card__week">Woche 1</p>
-              <p class="challenge-card__date">03.–07. Nov 2025</p>
+        <div class="container__challenge-archive">
+          <div class="challenge-card">
+            <img
+              id="card-cover"
+              src="../src/assets/images/WebDev-Karte-Beispiel.png"
+              alt=""
+            />
+            <div class="challenge-card__header">
+              <h3 class="challenge-card__title">Web-Dev-Karte (HTML)</h3>
+              <div class="challenge-card__info">
+                <p class="challenge-card__week">Woche 1</p>
+                <p class="challenge-card__date">03.–07. Nov 2025</p>
+              </div>
             </div>
-          </div>
-          <div class="challenge-card__body">
-            <p class="challenge-card__description">
-              Erstelle eine Spielkarte für Web-Developer <br />
-              im Pokemon-Stil nur mit HTML.
-            </p>
-            <ul class="challenge-card__tasks">
-              <div class="challenge-card__task-group">
-                <img
-                  src="./src/assets/icons/check_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
-                  alt="check icon"
-                />
-                <li class="challenge-card__task">
-                  Überschrift, Bild, Beschreibung, etc.
-                </li>
-              </div>
-              <div class="challenge-card__task-group">
-                <img
-                  src="./src/assets/icons/check_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
-                  alt="check icon"
-                />
-                <li class="challenge-card__task">
-                  Saubere Semantik & sinnvolle Struktur
-                </li>
-              </div>
-              <div class="challenge-card__task-group">
-                <img
-                  src="./src/assets/icons/close_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
-                  alt="close icon"
-                />
-                <li class="challenge-card__task">
-                  Kein CSS – Fokus auf reines HTML
-                </li>
-              </div>
-            </ul>
-          </div>
-          <button
-            class="challenge-card__button"
-            onclick="window.location.href='src/challenges/Woche01/web-dev-karte-html.html'"
-          >
-            Zur Challenge
-          </button>
-        </div>
-        <div class="challenge-card">
-          <div class="challenge-card__header">
-            <h3 class="challenge-card__title">Web-Dev-Karte (HTML)</h3>
-            <div class="challenge-card__info">
-              <p class="challenge-card__week">Woche 1</p>
-              <p class="challenge-card__date">03.–07. Nov 2025</p>
+            <div class="challenge-card__body">
+              <p class="challenge-card__description">
+                Erstelle eine Spielkarte für Web-Developer <br />
+                im Pokemon-Stil nur mit HTML.
+              </p>
+              <ul class="challenge-card__tasks">
+                <div class="challenge-card__task-group">
+                  <img
+                    src="../src/assets/icons/check_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
+                    alt="check icon"
+                  />
+                  <li class="challenge-card__task">
+                    Überschrift, Bild, Beschreibung, etc.
+                  </li>
+                </div>
+                <div class="challenge-card__task-group">
+                  <img
+                    src="../src/assets/icons/check_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
+                    alt="check icon"
+                  />
+                  <li class="challenge-card__task">
+                    Saubere Semantik & sinnvolle Struktur
+                  </li>
+                </div>
+                <div class="challenge-card__task-group">
+                  <img
+                    src="../src/assets/icons/close_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
+                    alt="close icon"
+                  />
+                  <li class="challenge-card__task">
+                    Kein CSS – Fokus auf reines HTML
+                  </li>
+                </div>
+              </ul>
             </div>
+            <button
+              class="challenge-card__button"
+              onclick="window.location.href='src/challenges/Woche01/web-dev-karte-html.html'"
+            >
+              Zur Challenge
+            </button>
           </div>
-          <div class="challenge-card__body">
-            <p class="challenge-card__description">
-              Erstelle eine Spielkarte für Web-Developer <br />
-              im Pokemon-Stil nur mit HTML.
-            </p>
-            <ul class="challenge-card__tasks">
-              <div class="challenge-card__task-group">
-                <img
-                  src="./src/assets/icons/check_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
-                  alt="check icon"
-                />
-                <li class="challenge-card__task">
-                  Überschrift, Bild, Beschreibung, etc.
-                </li>
-              </div>
-              <div class="challenge-card__task-group">
-                <img
-                  src="./src/assets/icons/check_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
-                  alt="check icon"
-                />
-                <li class="challenge-card__task">
-                  Saubere Semantik & sinnvolle Struktur
-                </li>
-              </div>
-              <div class="challenge-card__task-group">
-                <img
-                  src="./src/assets/icons/close_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
-                  alt="close icon"
-                />
-                <li class="challenge-card__task">
-                  Kein CSS – Fokus auf reines HTML
-                </li>
-              </div>
-            </ul>
-          </div>
-          <button
-            class="challenge-card__button"
-            onclick="window.location.href='src/challenges/Woche01/web-dev-karte-html.html'"
-          >
-            Zur Challenge
-          </button>
-        </div>
-        <div class="challenge-card">
-          <div class="challenge-card__header">
-            <h3 class="challenge-card__title">Web-Dev-Karte (HTML)</h3>
-            <div class="challenge-card__info">
-              <p class="challenge-card__week">Woche 1</p>
-              <p class="challenge-card__date">03.–07. Nov 2025</p>
-            </div>
-          </div>
-          <div class="challenge-card__body">
-            <p class="challenge-card__description">
-              Erstelle eine Spielkarte für Web-Developer <br />
-              im Pokemon-Stil nur mit HTML.
-            </p>
-            <ul class="challenge-card__tasks">
-              <div class="challenge-card__task-group">
-                <img
-                  src="./src/assets/icons/check_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
-                  alt="check icon"
-                />
-                <li class="challenge-card__task">
-                  Überschrift, Bild, Beschreibung, etc.
-                </li>
-              </div>
-              <div class="challenge-card__task-group">
-                <img
-                  src="./src/assets/icons/check_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
-                  alt="check icon"
-                />
-                <li class="challenge-card__task">
-                  Saubere Semantik & sinnvolle Struktur
-                </li>
-              </div>
-              <div class="challenge-card__task-group">
-                <img
-                  src="./src/assets/icons/close_16dp_1E1E1E_FILL0_wght400_GRAD0_opsz20.svg"
-                  alt="close icon"
-                />
-                <li class="challenge-card__task">
-                  Kein CSS – Fokus auf reines HTML
-                </li>
-              </div>
-            </ul>
-          </div>
-          <button
-            class="challenge-card__button"
-            onclick="window.location.href='src/challenges/Woche01/web-dev-karte-html.html'"
-          >
-            Zur Challenge
-          </button>
         </div>
       </div>
     </main>

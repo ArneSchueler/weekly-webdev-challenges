@@ -10,6 +10,7 @@ nav {
   position: fixed;
   width: 100%;
   box-shadow: 0 4px 8px rgba(87, 87, 87, 0.2);
+  margin-bottom: 250px;
 }
 
 .navbar__links {
@@ -18,7 +19,7 @@ nav {
   gap: 1.5rem;
 }
 
-a {
+nav a {
   text-decoration: none;
   color: var(--text-color-inverted);
 }
