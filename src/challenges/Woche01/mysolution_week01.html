@@ -3,19 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Woche02/mysolution-week02.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+    </style>
     <title>Webdev Spielkarte</title>
   </head>
   <body>
     <div class="container__card">
       <header>
         <div class="container__info">
-          <div class="content__header-text">
+          <div class="content__header">
             <h1>Timo "The Stack Overlord"</h1>
-            <ul>
-              <li>Webentwickler</li>
-              <li>Kaffeeabhängig</li>
-              <li>Bugflüsterer</li>
-            </ul>
           </div>
 
           <div class="content__information">
@@ -23,15 +22,25 @@
               <h2>92</h2>
               <h2>HP</h2>
             </div>
-            <div class="container__icon">
-              <img
-                src="../../assets/icons/local_cafe_24dp_1E1E1E_FILL0_wght400_GRAD0_opsz24.svg"
-                alt="Coffemug icon"
-              />
+            <div class="test">
+              <div class="container__icon">
+                <img
+                  src="../../assets/icons/local_cafe_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
+                  alt="Coffemug icon"
+                />
+              </div>
             </div>
           </div>
         </div>
+        <div class="content__subheader">
+          <ul>
+            <li>Webentwickler</li>
+            <li>•</li>
+            <li>Bugflüsterer</li>
+          </ul>
+        </div>
         <img
+          id="webdevImage"
           src="../../assets/images/ChatGPT Image Nov 5, 2025, 04_21_00 PM.png"
           alt="image of webdeveloper"
           width="20%"
@@ -41,97 +50,96 @@
         <div>
           <p class="description">
             <em
-              >Verbringt mehr Zeit im Dark Mode als im Tageslicht. Glaubt fest
-              daran, dass mehr Tabs im Browser auch mehr Produktivität
-              bedeuten.</em
+              >Schreibt Code, trinkt Kaffee, wiederholt. <br />Fehler? Feature
+              mit Potenzial.</em
             >
           </p>
           <div class="container__abilities-group">
             <div class="container__ability">
               <div class="container__ability-header">
-                <h4>Console Whisperer</h4>
+                <h3>Console Whisperer</h3>
                 <div class="container__icon-group">
                   <div class="container__icon">
                     <img
-                      src="../../assets/icons/local_cafe_24dp_1E1E1E_FILL0_wght400_GRAD0_opsz24.svg"
+                      src="../../assets/icons/local_cafe_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
                       alt="Coffemug icon"
                     />
                   </div>
                   <div class="container__icon">
                     <img
-                      src="../../assets/icons/local_cafe_24dp_1E1E1E_FILL0_wght400_GRAD0_opsz24.svg"
+                      src="../../assets/icons/local_cafe_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
                       alt="Coffemug icon"
                     />
                   </div>
                 </div>
               </div>
               <p>
-                Findet den einen vergessenen Semikolon-Fehler – aber erst nach 3
-                Stunden intensiven Debuggings.
+                Findet den einen vergessenen Semikolon-Fehler – <br />
+                aber erst nach 3 Stunden intensiven Debuggings.
               </p>
             </div>
             <div class="container__ability">
               <div class="container__ability-header">
-                <h4>Stack Overflow Summon</h4>
+                <h3>Stack Overflow Summon</h3>
                 <div class="container__icon-group">
                   <div class="container__icon">
                     <img
-                      src="../../assets/icons/local_cafe_24dp_1E1E1E_FILL0_wght400_GRAD0_opsz24.svg"
+                      src="../../assets/icons/local_cafe_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
                       alt="Coffemug icon"
                     />
                   </div>
                   <div class="container__icon">
                     <img
-                      src="../../assets/icons/local_cafe_24dp_1E1E1E_FILL0_wght400_GRAD0_opsz24.svg"
+                      src="../../assets/icons/local_cafe_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
                       alt="Coffemug icon"
                     />
                   </div>
                   <div class="container__icon">
                     <img
-                      src="../../assets/icons/local_cafe_24dp_1E1E1E_FILL0_wght400_GRAD0_opsz24.svg"
+                      src="../../assets/icons/local_cafe_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
                       alt="Coffemug icon"
                     />
                   </div>
                 </div>
               </div>
               <p>
-                Ruft uralte Code-Snippets aus den Tiefen des Internets herbei –
-                funktioniert zu 70 %.
+                Ruft uralte Code-Snippets aus den Tiefen <br />des Internets
+                herbei – funktioniert zu 70 %.
               </p>
             </div>
             <div class="container__ability">
               <div class="container__ability-header">
-                <h4>Caffeine Refactor</h4>
+                <h3>Caffeine Refactor</h3>
                 <div class="container__icon-group">
                   <div class="container__icon">
                     <img
-                      src="../../assets/icons/local_cafe_24dp_1E1E1E_FILL0_wght400_GRAD0_opsz24.svg"
+                      src="../../assets/icons/local_cafe_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
                       alt="Coffemug icon"
                     />
                   </div>
                   <div class="container__icon">
                     <img
-                      src="../../assets/icons/local_cafe_24dp_1E1E1E_FILL0_wght400_GRAD0_opsz24.svg"
+                      src="../../assets/icons/local_cafe_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
                       alt="Coffemug icon"
                     />
                   </div>
                   <div class="container__icon">
                     <img
-                      src="../../assets/icons/local_cafe_24dp_1E1E1E_FILL0_wght400_GRAD0_opsz24.svg"
+                      src="../../assets/icons/local_cafe_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
                       alt="Coffemug icon"
                     />
                   </div>
                   <div class="container__icon">
                     <img
-                      src="../../assets/icons/local_cafe_24dp_1E1E1E_FILL0_wght400_GRAD0_opsz24.svg"
+                      src="../../assets/icons/local_cafe_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg"
                       alt="Coffemug icon"
                     />
                   </div>
                 </div>
               </div>
               <p>
-                Trinkt kalten Kaffee und schreibt danach 40 % besseren Code
-                (angeblich).
+                Trinkt kalten Kaffee und schreibt danach 40 % <br />besseren
+                Code (angeblich).
               </p>
             </div>
           </div>
@@ -139,7 +147,7 @@
       </main>
       <hr />
       <footer>
-        <h5>Level: 2</h5>
+        <h4>Level: 2</h4>
         <p>Spezialgebiet: Copy & Paste Engineering</p>
       </footer>
     </div>
