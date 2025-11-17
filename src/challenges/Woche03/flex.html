@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../css/main.css" />
-    <link rel="stylesheet" href="./web-dev-karte-css.css" />
+    <link rel="stylesheet" href="./flex.css" />
   </head>
   <body>
     <header>
@@ -41,48 +41,61 @@
           <div class="challenge-detail__content">
             <img
               class="challenge-detail__image"
-              src="../../assets/images/WebDev-Karte-Beispiel.png"
+              src="../../assets/images/week03.png"
               alt="Bild einer Web-Dev-Karte"
             />
             <div class="challenge-detail__text">
               <h2 class="challenge-detail__title">
-                Woche 02: Web Dev Karte mit CSS (Style)
+                Woche 03: Responsive Design (Desktop / Tablet / Mobile Cards)
               </h2>
               <div class="challenge-detail__container-description">
                 <h3 class="challenge-detail__title-description">
                   Beschreibung
                 </h3>
                 <p class="challenge-detail__body-description">
-                  Diese Woche steht ganz im Zeichen von CSS. Du hast in Woche 1
-                  die Struktur deiner HTML-Spielkarte gebaut – jetzt bekommt sie
-                  Farbe, Stil und Persönlichkeit.
+                  Diese Woche dreht sich alles um Flexbox, Grid und Responsive
+                  Design. Du lernst, wie du Layouts baust, die sich je nach
+                  Bildschirmgröße automatisch anpassen — von Desktop über Tablet
+                  bis Mobile.
                   <br />
-                  Nutze die Grundlagen von CSS, um deiner Karte ein
-                  individuelles Aussehen zu geben. Arbeite mit Farben,
-                  Textgestaltung, Abständen und Layout, um sie visuell
-                  ansprechend zu gestalten.
+                  NDeine Aufgabe ist es, drei thematische Karten zu erstellen,
+                  die unterschiedliche Gerätegrößen repräsentieren: Desktop,
+                  Tablet und Mobile. Jede Karte soll eigene Inhalte haben und
+                  sich visuell von den anderen unterscheiden.
                   <br />
                   <br />
-                  Ziel ist es, deine HTML-Karte aus Woche 1 mit CSS zu
-                  gestalten, ohne den Aufbau komplett zu verändern. Du kannst
-                  dich am Look klassischer Sammelkarten orientieren oder dein
-                  ganz eigenes Design entwickeln.
+                  Das Besondere: Das Layout der Karten ändert sich abhängig von
+                  der Bildschirmbreite:
+                </p>
+                <ul>
+                  <li>Desktop: alle 3 Karten nebeneinander</li>
+                  <li>Tablet: die Karten „wrappen“ – 2 oben, 1 unten</li>
+                  <li>Mobile: alle Karten untereinander</li>
+                </ul>
+                <p>
+                  Je nach Bildschirmbreite wird außerdem eine andere Karte
+                  hervorgehoben.
                   <br />
-                  <strong>Abgabe:</strong> am Freitag, 14. November 2025.
+                  <strong>Abgabe:</strong> am Freitag, 21. November 2025.
                 </p>
               </div>
               <div class="challenge-detail__container-goal">
                 <h3 class="challenge-detail__title-goal">Ziel</h3>
                 <p class="challenge-detail__body-goal">
-                  Wende die Basis-Techniken von CSS an, um:
+                  Nutze die Layout-Techniken aus CSS, um:
                 </p>
                 <ul>
-                  <li>Schriftarten, Farben und Größen zu gestalten</li>
-                  <li>Abstände und Layouts zu definieren</li>
-                  <li>Elemente gezielt zu positionieren</li>
                   <li>
-                    und deiner Karte ein einheitliches, sauberes Design zu
-                    geben.
+                    Flexbox und Grid zur Strukturierung deiner Seite einzusetzen
+                  </li>
+                  <li>
+                    ein responsives Layout zu erstellen, das sich an
+                    unterschiedliche Bildschirmgrößen anpasst
+                  </li>
+                  <li>Inhalte übersichtlich und modern zu präsentieren</li>
+                  <li>
+                    einzelne Elemente (Cards) je nach Viewport gezielt
+                    hervorzuheben
                   </li>
                 </ul>
               </div>
@@ -93,38 +106,55 @@
                 <ul class="challenge-detail__body-requirements">
                   <li>Verwende eine separate CSS-Datei (z. B. style.css)</li>
                   <li>
-                    Style deine Karte mithilfe von:
+                    Erstelle drei Karten, die folgende Themen darstellen:
                     <ul>
+                      <li>Desktop Layout</li>
+                      <li>Tablet Layout</li>
+                      <li>Mobile Layout</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Die Cards sollen über Flexbox oder Grid angeordnet werden.
+                  </li>
+                  <li>
+                    Jede Karte enthält:
+                    <ul>
+                      <li>ein Titelbild</li>
+                      <li>ein Icon</li>
+                      <li>einen Titel</li>
+                      <li>einen kurzen Beschreibungstext</li>
+                      <li>einen Button</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Setze mindestens drei Media Queries ein:
+                    <ul>
+                      <li>Desktop (≥1024px) → Card Desktop hervorheben</li>
+                      <li>Tablet (600px–1023px) → Card Tablet hervorheben</li>
                       <li>
-                        Farbgestaltung (Hintergrund, Text, Rahmen, Symbole …)
-                      </li>
-                      <li>
-                        Textformatierung (Fonts, Größen, Gewicht, Ausrichtung)
-                      </li>
-                      <li>Abständen & Rändern (margin, padding, border)</li>
-                      <li>
-                        Box-Modell-Verständnis – sorge für klare Struktur.
-                      </li>
-                      <li>
-                        Selektoren & Klassen – arbeite gezielt und sauber.
+                        Mobile ( kleiner als 600px) → Card Mobile hervorheben
                       </li>
                     </ul>
                   </li>
                   <li>
-                    Nutze mindestens 3 verschiedene CSS-Selektoren (z. B.
-                    Klassen-, Element-, Attribut- oder Pseudo-Selektoren).
+                    Die Hervorhebung kann erfolgen durch:
+                    <ul>
+                      <li>größere Darstellung/li></li>
+                      <li>stärkeren Schatten/li></li>
+                      <li>Glow</li>
+                      <li>anderen Hintergrund oder Gradient</li>
+                    </ul>
                   </li>
                   <li>
-                    Positioniere deine Inhalte sinnvoll (z. B. mittig,
-                    Kartenrahmen, Schatteneffekte …).
+                    Verwende keine absolute Positionierung und kein JavaScript.
                   </li>
                   <li>
-                    Halte das Design lesbar und stimmig, auch bei dunklem
-                    Hintergrund.
+                    Arbeite klar strukturiert und übersichtlich, orientiere dich
+                    gern an modernen UI-Cards.
                   </li>
                 </ul>
               </div>
-              <div class="challenge-detail__container-bonus">
+              <!-- <div class="challenge-detail__container-bonus">
                 <h3 class="challenge-detail__title-bonus">Bonus</h3>
                 <ul>
                   <li>
@@ -140,11 +170,11 @@
                     Properties).
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
-        <section class="section__solution">
+        <!-- <section class="section__solution">
           <img
             src="../../assets/images/Screenshot 2025-11-14 at 09.40.18.png"
             alt=""
@@ -331,7 +361,7 @@ footer h4 {
 
         </code></pre>
           </div>
-        </section>
+        </section> -->
       </section>
     </main>
   </body>
