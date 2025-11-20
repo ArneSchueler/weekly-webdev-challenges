@@ -6,172 +6,99 @@
   --icon-gradient: linear-gradient(135deg, #0666dc 0%, #053292 100%);
   --image-shadow: inset 0 0 12px rgba(0, 0, 0, 0.45),
     0 0 14px rgba(0, 114, 255, 0.15);
-  --card-shadow: inset 0 0 12px rgba(0, 0, 0, 0.45),
-    0 0 18px rgba(0, 114, 255, 0.22);
+  --card-shadow: box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;;
 }
 
 * {
   margin: 0;
   padding: 0;
-  color: white;
 }
 
 html {
   font-family: "Rubik", sans-serif;
-  font-size: 12px;
+  font-size: 16px;
+  color: whitesmoke;
 }
 
 body {
-  background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 120px 0;
-}
-
-hr {
-  margin: 8px 0;
-}
-
-/* Card Layout */
-.container__card {
-  background-color: var(--primary-bg-color);
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  height: fit-content;
-  border-radius: 15px;
-  padding: 16px;
-  border: 12px solid var(--border-color);
-  box-shadow: var(--card-shadow);
-}
-
-/* header Layout */
-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.container__info {
-  display: inline-flex;
-  align-content: start;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.content__information {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.container__hp {
-  display: inline-flex;
-}
-
-.content__subheader {
-  width: 100%;
-}
-
-.content__subheader ul {
-  display: inline-flex;
-  list-style: none;
-  gap: 4px;
-}
-.content__subheader ul li:first-child {
-  list-style-type: none;
-}
-
-.container__icon-size {
-  width: 22px;
-  height: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-h1 {
-  font-size: 1.8rem;
-  font-weight: bolder;
-}
-
-h2 {
-  font-size: 1.6rem;
-  font-weight: bolder;
-}
-
-h3 {
-  font-size: 1.5rem;
-  font-weight: 500;
-}
-
-/* icon layout */
-.container__icon {
-  background: var(--icon-gradient);
-  display: flex;
-  width: 20px;
-  height: 20px;
-  padding: 6px;
-  border-radius: 50%;
-}
-
-.container__icon-group .container__icon {
-  width: 12px;
-  height: 12px;
-}
-
-#webdevImage {
-  width: 100%;
-  margin-top: 8px;
-  /* border: 4px solid var(--secondary-bg-color); */
-  box-shadow: var(--image-shadow);
-  border-radius: 0.5rem;
-}
-
-.container__ability-header {
-  display: inline-flex;
-  align-items: center;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.container__icon-group {
-  display: inline-flex;
-  gap: 4px;
-}
-
-footer {
-  display: inline-flex;
-  font-size: 0.9rem;
-  justify-content: space-between;
-}
-
-footer h4 {
-  font-weight: bold;
-}
-
-.description {
-  display: flex;
-  justify-content: center;
-  padding: 12px;
-  margin: 8px;
   background-color: var(--secondary-bg-color);
-  border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
+  padding: 80px;
+  gap: 64px;
 }
 
-.container__ability {
-  margin-bottom: 12px;
+main {
+  width: 100%;
 }
 
-.container__ability-header {
-  margin-bottom: 4px;
+.container-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
 
-.container__abilities-group {
-  padding: 0 12px;
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-bg-color);
+  box-shadow: var(--card-shadow);
+  border-radius: 8px;
+  padding: clamp(8px, 5vw, 24px);
+  gap: 24px;
+  transition: all 0.5s ease;
 }
 
-#hp {
-  color: var(--primary-color);
+.card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
 }
+
+.card p {
+  width: fit-content;
+}
+
+.card ul {
+  width: fit-content;
+}
+
+.container-card-text {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 75%;
+}
+
+@media (width >=1200px){
+
+  .desktop{
+    transform: scale(1.05);
+    background-color: #345696;
+  }
+}
+
+@media (width >= 650px) and (width <1200px){
+    .container-cards{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .tablet{
+    transform: scale(1.05);
+    background-color: #345696;
+  }
+}
+
+@media (width <650px){
+  .container-cards{
+    grid-template-columns: 1fr;
+  }
+  .mobile{
+    transform: scale(1.05);
+    background-color: #345696;
+  }
+}
+
