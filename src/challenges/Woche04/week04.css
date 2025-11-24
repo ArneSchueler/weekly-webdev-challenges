@@ -1,0 +1,46 @@
+@import url("../css/variables.css");
+
+.section__challenge-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.challenge-detail__body-description {
+  max-width: 80%;
+}
+
+.challenge-detail__container {
+  display: flex;
+  padding: 80px;
+  gap: 24px;
+  line-height: 1.6;
+  align-items: flex-start;
+}
+.challenge-detail__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 64px;
+}
+
+.challenge-detail__image {
+  border-radius: 15px;
+  height: 650px;
+}
+
+.challenge-detail__text {
+  max-width: 1200px;
+}
+
+.section__solution {
+  background-color: var(--bg-section-color);
+  padding: 24px;
+  display: inline-flex;
+}
+
+.section__solution img {
+  display: block;
+}

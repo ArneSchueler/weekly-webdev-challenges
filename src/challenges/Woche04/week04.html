@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="./week04.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="https://arneschueler.github.io/weekly-webdev-challenges/"
+            >DevChallenges</a
+          >
+        </div>
+        <ul class="navbar__links">
+          <li class="navbar__item">
+            <a
+              href="https://arneschueler.github.io/weekly-webdev-challenges#hero-section"
+              >Home</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a
+              href="https://arneschueler.github.io/weekly-webdev-challenges#challenge-section"
+              >Challenges</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a
+              href="https://arneschueler.github.io/weekly-webdev-challenges/src/challenge-archive.html"
+              >Archive</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section__challenge-detail">
+        <div class="challenge-detail__container">
+          <div class="challenge-detail__content">
+            <img
+              class="challenge-detail__image"
+              src="../../assets/images/week04.png"
+              alt="Bild einer Web-Dev-Karte"
+            />
+            <div class="challenge-detail__text">
+              <h2 class="challenge-detail__title">
+                Woche 04: CSS Component Library + Kontaktseite
+              </h2>
+              <div class="challenge-detail__container-description">
+                <h3 class="challenge-detail__title-description">
+                  Beschreibung
+                </h3>
+                <p class="challenge-detail__body-description">
+                  Diese Woche geht es um wiederverwendbare Bausteine in HTML &
+                  CSS. Du erstellst deine eigene kleine CSS Component Library,
+                  bestehend aus Buttons, Cards, Textfeldern, Checkboxen, Tags,
+                  Überschriften und Fließtext. Alle Komponenten werden in einer
+                  zentralen CSS-Datei (components.css) definiert – mit klaren,
+                  eindeutigen kebab-case Klassennamen.
+                  <br />
+                  Anschließend setzt du diese Komponenten auf einer separaten,
+                  responsiven Kontaktseite ein. Die Kontaktseite soll mindestens
+                  Desktop- und Mobile-Ansicht unterstützen und zeigt, dass deine
+                  Komponenten flexibel wiederverwendbar sind.
+                  <br />
+                  <br />
+                  Du arbeitest ohne JavaScript und ohne Frameworks – nur HTML
+                  und CSS. Achte außerdem auf Hover-, Focus- und
+                  Active-Zustände, sowie kleine Transitionen für ein modernes
+                  UI-Gefühl.
+                </p>
+                <p><strong>Abgabe:</strong> am MOntag, 01. Dezember 2025.</p>
+              </div>
+              <div class="challenge-detail__container-goal">
+                <h3 class="challenge-detail__title-goal">Ziel</h3>
+                <p class="challenge-detail__body-goal">
+                  Nutze HTML und CSS, um:
+                </p>
+                <ul>
+                  <li>
+                    eine saubere und wiederverwendbare Component Library
+                    aufzubauen
+                  </li>
+                  <li>
+                    verständliche, eindeutige CSS-Klassen im kebab-case zu
+                    erstellen
+                  </li>
+                  <li>
+                    ein responsives Layout für die Kontaktseite umzusetzen
+                  </li>
+                  <li>
+                    moderne UI-Elemente mit Hover/Fokus/Pressed-Effekten zu
+                    gestalten
+                  </li>
+                  <li>
+                    deine Komponenten sinnvoll zu strukturieren und zu
+                    kommentieren
+                  </li>
+                  <li>
+                    ein kleines Mini-Design-System für dein Projekt zu
+                    entwickeln
+                  </li>
+                </ul>
+              </div>
+              <div class="challenge-detail__container-requirements">
+                <h3 class="challenge-detail__title-requirements">
+                  Anforderungen
+                </h3>
+                <ul class="challenge-detail__body-requirements">
+                  <li>Verwende eine zentrale CSS-Datei (components.css)</li>
+                  <li>
+                    Erstelle zunächst eine Seite, die deine Komponenten zeigt
+                    (z. B. components.html)
+                  </li>
+                  <li>
+                    Setze folgende Komponenten um:
+                    <ul>
+                      <li>Buttons (mind. Primary + Secondary)</li>
+                      <li>Input-Textfeld</li>
+                      <li>Checkbox</li>
+                      <li>Tags (Labels/Chips)</li>
+                      <li>Card</li>
+                      <li>Überschriften & Fließtext</li>
+                      <li>
+                        <strong>Optional:</strong> weitere UI-Elemente wie
+                        Alerts, Badges oder weitere Varianten
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Nutze diese Komponenten anschließend auf einer separaten
+                    Kontaktseite (contact.html):
+                    <ul>
+                      <li>Die Seite soll responsiv sein</li>
+                      <li>
+                        <strong>Pflicht:</strong> Einsatz von Überschriften,
+                        Text, Input, Checkbox, Button
+                      </li>
+                      <li>
+                        <strong>Optional:</strong> Tags oder Cards zur
+                        Strukturierung
+                      </li>
+                      <li>
+                        <strong>Beispiel-Aufbau:</strong> Eine Card mit dem
+                        gesamten Kontaktformular
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Komponenten sollen ausschließlich über CSS-Klassen
+                    funktionieren
+                    <ul>
+                      <li>keine Inline-Styles</li>
+                      <li>kein JavaScript</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Verwende Kommentare in deiner CSS-Datei (z. B. /* buttons
+                    */, /* inputs */), um Struktur zu schaffen
+                  </li>
+
+                  <li>
+                    Achte auf Animationen und Zustände:
+                    <ul>
+                      <li>Hover</li>
+                      <li>Focus</li>
+                      <li>Pressed/Active</li>
+                      <li>kleine Transitionen</li>
+                    </ul>
+                  </li>
+                  <li>
+                    Arbeite klar strukturiert und modern – orientiere dich gern
+                    an echten UI-Libraries wie Material, Bootstrap oder Tailwind
+                    (nur Inspiration, nicht kopieren)
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Bonus Challenge -->
+
+              <!-- <div class="challenge-detail__container-bonus">
+                <h3 class="challenge-detail__title-bonus">Bonus</h3>
+                <ul>
+                  <li>
+                    Füge ein Hover-Effekt hinzu (z. B. leuchtet die Karte leicht
+                    auf, wenn man sie mit der Maus berührt).
+                  </li>
+                  <li>
+                    Erstelle eine zweite Variante deiner Karte (z. B. andere
+                    Farbe oder Charakter).
+                  </li>
+                  <li>
+                    Verwende einheitliche Farbvariablen (z. B. über CSS-Custom
+                    Properties).
+                  </li>
+                </ul>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Solution Example -->
+
+        <!-- <section class="section__solution">
+          <img
+            src="../../assets/images/Screenshot 2025-11-14 at 09.40.18.png"
+            alt=""
+          />
+          <div>
+            <h3>Lösungsansatz</h3>
+            <pre><code>:root {
+  --border-color: #053292;
+  --primary-color: #0073ff;
+  --primary-bg-color: #191d24;
+  --secondary-bg-color: #1d2731;
+  --icon-gradient: linear-gradient(135deg, #0666dc 0%, #053292 100%);
+  --image-shadow: inset 0 0 12px rgba(0, 0, 0, 0.45),
+    0 0 14px rgba(0, 114, 255, 0.15);
+  --card-shadow: inset 0 0 12px rgba(0, 0, 0, 0.45),
+    0 0 18px rgba(0, 114, 255, 0.22);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+html {
+  font-family: "Rubik", sans-serif;
+  font-size: 12px;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 0;
+}
+
+hr {
+  margin: 8px 0;
+}
+
+/* Card Layout */
+.container__card {
+  background-color: var(--primary-bg-color);
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: fit-content;
+  border-radius: 15px;
+  padding: 16px;
+  border: 12px solid var(--border-color);
+  box-shadow: var(--card-shadow);
+}
+
+/* header Layout */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container__info {
+  display: inline-flex;
+  align-content: start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.content__information {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.container__hp {
+  display: inline-flex;
+}
+
+.content__subheader {
+  width: 100%;
+}
+
+.content__subheader ul {
+  display: inline-flex;
+  list-style: none;
+  gap: 4px;
+}
+.content__subheader ul li:first-child {
+  list-style-type: none;
+}
+
+.container__icon-size {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* icon layout */
+.container__icon {
+  background: var(--icon-gradient);
+  display: flex;
+  width: 20px;
+  height: 20px;
+  padding: 6px;
+  border-radius: 50%;
+}
+
+.container__icon-group .container__icon {
+  width: 12px;
+  height: 12px;
+}
+
+#webdevImage {
+  width: 100%;
+  margin-top: 8px;
+  /* border: 4px solid var(--secondary-bg-color); */
+  box-shadow: var(--image-shadow);
+  border-radius: 0.5rem;
+}
+
+.container__ability-header {
+  display: inline-flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.container__icon-group {
+  display: inline-flex;
+  gap: 4px;
+}
+
+footer {
+  display: inline-flex;
+  font-size: 0.9rem;
+  justify-content: space-between;
+}
+
+footer h4 {
+  font-weight: bold;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  margin: 8px;
+  background-color: var(--secondary-bg-color);
+  border-radius: 0.5rem 0.5rem 1.5rem 1.5rem;
+}
+
+.container__ability {
+  margin-bottom: 12px;
+}
+
+.container__ability-header {
+  margin-bottom: 4px;
+}
+
+.container__abilities-group {
+  padding: 0 12px;
+}
+
+#hp {
+  color: var(--primary-color);
+}
+
+        </code></pre>
+          </div>
+        </section> -->
+      </section>
+    </main>
+  </body>
+</html>
