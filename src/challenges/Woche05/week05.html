@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link rel="stylesheet" href="./week05.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="https://arneschueler.github.io/weekly-webdev-challenges/">
+            DevChallenges
+          </a>
+        </div>
+        <ul class="navbar__links">
+          <li class="navbar__item">
+            <a
+              href="https://arneschueler.github.io/weekly-webdev-challenges#hero-section"
+              >Home</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a
+              href="https://arneschueler.github.io/weekly-webdev-challenges#challenge-section"
+              >Challenges</a
+            >
+          </li>
+          <li class="navbar__item">
+            <a
+              href="https://arneschueler.github.io/weekly-webdev-challenges/src/challenge-archive.html"
+              >Archive</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="section__challenge-detail">
+        <div class="challenge-detail__container">
+          <div class="challenge-detail__content">
+            <img
+              class="challenge-detail__image"
+              src="../../assets/images/stopwatch.png"
+              alt="Illustration einer Stopuhr-Web-App"
+            />
+            <div class="challenge-detail__text">
+              <h2 class="challenge-detail__title">
+                Woche 05: JS-Stopuhr mit Runden
+              </h2>
+              <div class="challenge-detail__container-description">
+                <h3 class="challenge-detail__title-description">
+                  Beschreibung
+                </h3>
+                <p class="challenge-detail__body-description">
+                  Diese Woche geht es um deinen ersten interaktiven
+                  JavaScript-Use Case im Browser: eine Stopuhr. Du baust eine
+                  kleine Web-App, die Zeit ab <strong>0</strong> in
+                  Millisekunden hochzählt und im Interface anzeigt. Die Stopuhr
+                  soll per Buttons gesteuert werden: <strong>Start</strong>,
+                  <strong>Stop</strong>, <strong>Clear</strong> und
+                  <strong>Runde</strong>.
+                  <br />
+                  Über Runden (Lap-Funktion) speicherst du Zeitpunkte, die in
+                  einer Liste unter der Stopuhr angezeigt werden.
+                  <br />
+                  <br />
+                  Du nutzt die Inhalte aus JS&nbsp;1: Variablen, Funktionen,
+                  Events, DOM-Manipulation und einfache CSS-Manipulation über
+                  JavaScript. Frameworks sind nicht erlaubt – nur pures HTML,
+                  CSS und JavaScript.
+                </p>
+                <p><strong>Abgabe:</strong> am Montag, 08. Dezember 2025.</p>
+              </div>
+
+              <div class="challenge-detail__container-goal">
+                <h3 class="challenge-detail__title-goal">Ziel</h3>
+                <p class="challenge-detail__body-goal">
+                  Nutze HTML, CSS und JavaScript, um:
+                </p>
+                <ul>
+                  <li>
+                    eine funktionierende Stopuhr mit Start/Stop/Clear/Runden
+                    umzusetzen
+                  </li>
+                  <li>
+                    JavaScript-Funktionen für Logik und Zeitberechnung zu
+                    schreiben
+                  </li>
+                  <li>
+                    Events (click) zu nutzen, um Buttons mit Funktionalität zu
+                    verbinden
+                  </li>
+                  <li>
+                    DOM-Elemente gezielt auszuwählen und ihren Inhalt zu
+                    verändern
+                  </li>
+                  <li>
+                    mit CSS-Klassen Zustände wie „läuft“ oder „gestoppt“
+                    sichtbar zu machen
+                  </li>
+                  <li>saubere Struktur in HTML, CSS und JS beizubehalten</li>
+                </ul>
+              </div>
+
+              <div class="challenge-detail__container-requirements">
+                <h3 class="challenge-detail__title-requirements">
+                  Anforderungen
+                </h3>
+                <ul class="challenge-detail__body-requirements">
+                  <li>
+                    Lege mindestens diese Dateien an:
+                    <ul>
+                      <li><code>index.html</code></li>
+                      <li><code>style.css</code></li>
+                      <li><code>script.js</code></li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    Erstelle das UI der Stopuhr:
+                    <ul>
+                      <li>
+                        ein Anzeigefeld für die Zeit (z.&nbsp;B.
+                        <code>mm:ss.mmm</code>)
+                      </li>
+                      <li>Buttons: Start, Stop, Clear/Reset, Runde</li>
+                      <li>einen Bereich / eine Liste für Rundenzeiten</li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    Funktionalität der Stopuhr:
+                    <ul>
+                      <li>
+                        Zeit startet bei <strong>0 ms</strong> und zählt nach
+                        Klick auf <strong>Start</strong> hoch
+                      </li>
+                      <li>
+                        <strong>Stop</strong> pausiert die Zeit, erneutes
+                        <strong>Start</strong> läuft von dort weiter
+                      </li>
+                      <li>
+                        <strong>Clear</strong> setzt Zeit auf 0 und löscht alle
+                        Runden
+                      </li>
+                      <li>
+                        <strong>Runde</strong> speichert die aktuelle Zeit und
+                        zeigt sie als Eintrag (z.&nbsp;B. „Runde 1 – 00:12.350“)
+                      </li>
+                      <li>
+                        Zeitbasis intern in Millisekunden, Darstellung sauber
+                        formatiert
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    JavaScript-Vorgaben:
+                    <ul>
+                      <li>
+                        nutze eigene Funktionen (z.&nbsp;B. für Start, Stop,
+                        Clear, Runden, Formatierung)
+                      </li>
+                      <li>
+                        Events über
+                        <code>addEventListener("click", ...)</code>, kein
+                        <code>onclick</code> im HTML
+                      </li>
+                      <li>
+                        DOM-Auswahl mit
+                        <code>document.getElementById</code> oder
+                        <code>querySelector</code>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    CSS &amp; UX:
+                    <ul>
+                      <li>
+                        Buttons sollen klar erkennbar und gut klickbar sein
+                        (auch auf Mobile)
+                      </li>
+                      <li>
+                        Zeige mit CSS, ob die Stopuhr gerade läuft oder gestoppt
+                        ist (z.&nbsp;B. Button-Zustände)
+                      </li>
+                      <li>
+                        nutze einfache Hover- und Focus-Zustände für bessere
+                        Bedienbarkeit
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li>
+                    <strong>Optional (Bonus):</strong>
+                    <ul>
+                      <li>
+                        Unterschied zwischen Gesamtzeit und letzter Rundenzeit
+                        anzeigen
+                      </li>
+                      <li>
+                        Keyboard-Shortcuts (z.&nbsp;B. Space = Start/Stop, R =
+                        Runde, C = Clear)
+                      </li>
+                      <li>eine leichte Animation beim Start/Stop des Timers</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Bonus Challenge (falls du später was ergänzen willst)
+              <div class="challenge-detail__container-bonus">
+                <h3 class="challenge-detail__title-bonus">Bonus</h3>
+                <ul>
+                  <li>...</li>
+                </ul>
+              </div>
+              -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Optional: Solution Example
+        <section class="section__solution">
+          <img
+            src="../../assets/images/solution-week05.png"
+            alt="Beispiel-Lösung der Stopuhr-Challenge"
+          />
+          <div>
+            <h3>Lösungsansatz</h3>
+            <pre><code>// Platz für einen Beispiel-Code-Ausschnitt, falls du später willst</code></pre>
+          </div>
+        </section>
+        -->
+      </section>
+    </main>
+  </body>
+</html>
