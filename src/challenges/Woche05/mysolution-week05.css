@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Major+Mono+Display&display=swap");
+
+:root {
+  --border-color: #053292;
+  --primary-color: #0073ff;
+  --primary-bg-color: #191d24;
+  --secondary-bg-color: #1d2731;
+  --icon-gradient: linear-gradient(135deg, #0666dc 0%, #053292 100%);
+  --image-shadow: inset 0 0 12px rgba(0, 0, 0, 0.45),
+    0 0 14px rgba(0, 114, 255, 0.15);
+  --card-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  font-family: "Electrolize", sans-serif;
+  font-size: 16px;
+  color: whitesmoke;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
+  padding: 80px;
+  gap: 64px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-timer {
+  background-image: linear-gradient(
+    to right bottom,
+    #3a5884,
+    #344e76,
+    #2d4568,
+    #273c5b,
+    #21334e
+  );
+  padding: 40px;
+  border-radius: 50%50% 15%15%;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.section-lap {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.timer-container {
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+  border-radius: 50%;
+  aspect-ratio: 1;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.timer-inner-container {
+  background-color: var(--secondary-bg-color);
+  width: 90%;
+  height: 90;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  font-size: 38px;
+  font-family: "Major Mono Display", monospace;
+}
+
+.btn-container {
+  display: flex;
+  gap: 32px;
+}
+
+.btn {
+  background-image: linear-gradient(
+    to right bottom,
+    #50709f,
+    #486590,
+    #415b81,
+    #3a5172,
+    #334764
+  );
+  aspect-ratio: 1;
+  border-radius: 50%;
+  width: 64px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  color: white;
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Electrolize", sans-serif;
+  cursor: pointer;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn:hover {
+  transition: all 0.3s ease;
+  filter: brightness(1.1);
+}
+
+.btn:active {
+  transform: translateY(1px);
+  transition: all 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.lap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.lap-container > div {
+  display: grid;
+  gap: 16px;
+  font-family: "Major Mono Display", monospace;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+
+  background-image: linear-gradient(
+    to right bottom,
+    #5d81b5,
+    #5676a5,
+    #4e6b96,
+    #476087,
+    #405678
+  );
+
+  padding: 8px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 100%;
+}
+
+.lap-number {
+  background-image: linear-gradient(
+    to right bottom,
+    #50709f,
+    #486590,
+    #415b81,
+    #3a5172,
+    #334764
+  );
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  width: fit-content;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  font-weight: 900;
+
+  font-family: "Electrolize", sans-serif;
+}
+
+#lapNumber {
+  grid-column: 1;
+}
+#lapTime {
+  grid-column: 2;
+  font-size: 24px;
+}
